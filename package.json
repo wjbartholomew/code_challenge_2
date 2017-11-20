@@ -1,8 +1,8 @@
 {
   "name": "new_code_challenge_2",
   "version": "1.0.0",
-  "description": "new code challenge 2 launchpad",
-  "main": "index.js",
+  "description": "Code Challenge 2",
+  "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js"
