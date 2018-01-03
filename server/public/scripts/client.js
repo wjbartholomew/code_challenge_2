@@ -1,8 +1,7 @@
-console.log( 'js' );
+console.log('client.js sourced');
 
-$( document ).ready( function(){
-  console.log( 'JQ' );
-  $( '#addJokeButton' ).on( 'click', function(){
-    console.log( 'addJokeButton on click');
-  }); // end addJokeButton on click
-}); // end doc ready
+$( document ).ready( onReady );
+
+function onReady() {
+    console.log('DOM ready');
+}

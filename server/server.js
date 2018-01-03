@@ -11,7 +11,7 @@ var jokes = [
   {
     whoseJoke: "Danny",
     jokeQuestion: "Why do scuba divers fall backwards out of boats?",
-    punchLine: "If they fell forwards they’d still be in the boat"
+    punchLine: "If they fell forwards they’d still be in the boat!"
   },
   {
     whoseJoke: "Luke",
@@ -26,18 +26,18 @@ var jokes = [
   {
     whoseJoke: "dEv",
     jokeQuestion: "Why should you not play cards in the forest?",
-    punchLine: "Too many Cheetahs"
+    punchLine: "Too many Cheetahs!"
   },
   {
     whoseJoke: "Scott",
-    jokeQuestion: "I went to the zoo the other day, it had one dog,",
+    jokeQuestion: "I went to the zoo the other day, it had one dog...",
     punchLine: "It was a shih tzu."
   }
 ];
 
-// server back static files
+// serve back static files
 app.use(express.static('server/public'));
 
 app.listen( port, function(){
-  console.log('server up on: ', port );
+  console.log('server running on: ', port );
 }); // end spin up server
