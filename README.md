@@ -18,10 +18,11 @@ You can view the full object in ```server/server.js```. The data structure is an
 ```
 jokes = [
   {
-    whoseJoke: "Huck",
-    jokeQuestion: "What's the difference between roast beef and pea soup?",
-    punchLine: "Anyone can roast beef."
-  }]
+    whoseJoke: "Luke",
+    jokeQuestion: "Twofish are in a tank. What did one fish say to the other?",
+    punchLine: "Do you know how to drive this thing?"
+  }
+];
 ```
 
 To get started, fork this repo and clone it to your machine.
