@@ -1,13 +1,13 @@
-var express = require( 'express' );
-var app = express();
-var path = require( 'path' );
-var bodyParser = require( 'body-parser' );
-var port = process.env.PORT || 5000;
+const express = require( 'express' );
+const app = express();
+const path = require( 'path' );
+const bodyParser = require( 'body-parser' );
+const port = process.env.PORT || 5000;
 
 // use bodyParser.urlencoded throughout the app with this:
 app.use(bodyParser.urlencoded({ extended: true }));
 
-var jokes = [
+let jokes = [
   {
     whoseJoke: "Danny",
     jokeQuestion: "Why do scuba divers fall backwards out of boats?",
@@ -38,6 +38,6 @@ var jokes = [
 // serve back static files
 app.use(express.static('server/public'));
 
-app.listen( port, function(){
-  console.log('server running on: ', port );
+app.listen(port, function(){
+  console.log('server running on: ', port);
 }); // end spin up server
