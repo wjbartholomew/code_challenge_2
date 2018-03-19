@@ -1,8 +1,7 @@
 const express = require( 'express' );
 const app = express();
-const path = require( 'path' );
 const bodyParser = require( 'body-parser' );
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 // use bodyParser.urlencoded throughout the app with this:
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -38,6 +37,6 @@ let jokes = [
 // serve back static files
 app.use(express.static('server/public'));
 
-app.listen(port, function(){
-  console.log('server running on: ', port);
+app.listen(PORT, function(){
+  console.log('server running on: ', PORT);
 }); // end spin up server
