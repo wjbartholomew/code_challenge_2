@@ -8,18 +8,18 @@
 
 ### The Joke Book
 
-Your client has asked you to create a Joke Book application. The server will contain all the current joke data and you have been provided with the initial server file (```server/server.js```).
+Your client has asked you to create a Joke Book application. The server will contain all the current joke data and you have been provided with the initial server file (`server/server.js`).
 
-Your job will be to build up the server around the data in the ```server/server.js``` file, display the current jokes to the DOM, and add the ability for users to add their own jokes and display these too.
+Your job will be to build up the server around the data in the `server/server.js` file, display the current jokes to the DOM, and add the ability for users to add their own jokes and display these too.
 
 ##### How the joke data is structured
 You can view the full object in ```server/server.js```. The data structure is an array of objects. These objects have three properties: whoseJoke, jokeQuestion, and punchLine.
 
-```
-jokes = [
+```JavaScript
+let jokes = [
   {
     whoseJoke: "Luke",
-    jokeQuestion: "Twofish are in a tank. What did one fish say to the other?",
+    jokeQuestion: "Two fish are in a tank. What did one fish say to the other?",
     punchLine: "Do you know how to drive this thing?"
   }
 ];

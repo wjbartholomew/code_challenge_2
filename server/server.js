@@ -14,7 +14,7 @@ let jokes = [
   },
   {
     whoseJoke: "Luke",
-    jokeQuestion: "Twofish are in a tank. What did one fish say to the other?",
+    jokeQuestion: "Two fish are in a tank. What did one fish say to the other?",
     punchLine: "Do you know how to drive this thing?"
   },
   {
