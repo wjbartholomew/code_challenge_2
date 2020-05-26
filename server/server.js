@@ -49,3 +49,8 @@ app.listen(PORT, () => {
 app.get('/jokes', function (req, res){
   res.send(jokes);
 })
+
+app.post('/addJoke', function (req, res) {
+jokes.push(req.body);
+console.log(jokes)
+})

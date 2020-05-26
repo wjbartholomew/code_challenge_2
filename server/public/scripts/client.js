@@ -5,6 +5,7 @@ $( document ).ready( onReady );
 function onReady() {
     console.log('DOM ready');
     displayJokes();
+    $('#addJokeButton').on('click', addJoke)
 }
 
 function displayJokes(){
@@ -20,4 +21,27 @@ console.log('hello')
         }
     })
 }
+
+
+function addJoke(){
+    let who = $('#whoseJokeIn').val();
+    let question = $('#questionIn').val();
+    let punchLine = $('#punchlineIn').val();
+
+    let dataToSend = {
+        whoseJoke: who,
+        jokeQuestion: question,
+        punchLine: punchLine
+    }
+
+    $.ajax({
+        method: 'POST',
+        url: '/addJoke',
+        data: dataToSend
+    }).then( function (response){
+       
+    });
+    displayJokes();
+}
+
 
